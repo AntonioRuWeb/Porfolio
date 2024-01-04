@@ -1,0 +1,27 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Agosto 2023 - Actualidad",
+    title: "Test Analyst - Sogeti",
+    description:
+      "En mi rol actual en Capgemini, estoy teniendo la valiosa oportunidad de desarrollarme en el campo del Testing . Estoy adquiriendo conocimientos y experiencia en esta área, lo que me está permitiendo crecer y contribuir a proyectos relacionados con el testing.",
+  },
+  {
+    date: "Marzo 2023 - Junio 2023",
+    title: "Prácticas - Sogeti",
+    description:
+      "En Capgemini, tuve la valiosa oportunidad de realizar mis prácticas, las cuales me permitieron formarme en Testing y Desarrollo Web",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
