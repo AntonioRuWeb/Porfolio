@@ -1,0 +1,26 @@
+---
+import StudiesItem from "./studiesItem.astro";
+
+const STUDIES = [
+  {
+    date: "sept 2021 - jun 2023",
+    title: "I.E.S. Gerald Brenan",
+    description: "Desarrollo de Aplicaciones Web.",
+  },
+  {
+    date: "sept 2018 - sept 2020",
+    title: "Universidad de Málaga",
+    description: "Grado en ingeniería informática",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    STUDIES.map((studies) => (
+      <li class="mb-10 ms-4">
+        <StudiesItem {...studies} />
+      </li>
+    ))
+  }
+</ol>
