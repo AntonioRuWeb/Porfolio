@@ -10,6 +10,15 @@ import ExperienceIcon from "../components/icons/ExperienceIcon.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Studies from "../components/studies.astro";
 import EducationIcon from "../components/icons/book.astro";
+import JavaScript from "../components/icons/JavaScript.astro";
+import TecnologiaIcon from "../components/icons/TecnologiaIcon.astro";
+import AngularIcon from "../components/icons/AngularIcon.astro";
+import NodeIcon from "../components/icons/NodeIcon.astro";
+import MongoIcon from "../components/icons/MongoIcon.astro";
+import TailwindIcon from "../components/icons/tailwindIcon.astro";
+import AstroIcon from "../components/icons/AstroIcon.astro";
+import SeleniumIcon from "../components/icons/SeleniumIcon.astro";
+import PostmanIcon from "../components/icons/PostmanIcon.astro";
 ---
 
 <Layout title="Porfolio de AntonioRuiz.">
@@ -17,7 +26,7 @@ import EducationIcon from "../components/icons/book.astro";
     <SectionContainer class="py-20 pb-20">
       <img
         class="rounded-full w-20 h-20 mb-3"
-        src="/photoAntonio.jpg"
+        src="/photoAntonio.webp"
         alt="Antonio photo"
       />
 
@@ -57,19 +66,55 @@ import EducationIcon from "../components/icons/book.astro";
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <SectionContainer class="mb-16" id="experiencia">
       <h2 class="text-2xl font-semibold flex mb-6 gap-x-3 items-center">
         <ExperienceIcon class="size-7" />
         Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>
-    <SectionContainer id="estudios">
+
+    <SectionContainer class="mb-16" id="estudios">
       <h2 class="text-2xl font-semibold flex mb-6 gap-x-3 items-center">
         <EducationIcon class="size-7" />
         Educación
       </h2>
       <Studies />
+    </SectionContainer>
+
+    <SectionContainer class="mb-16">
+      <h2 class="text-2xl font-semibold flex mb-6 gap-x-3 items-center">
+        <TecnologiaIcon class="size-7" /> Tecnologias
+      </h2>
+      <div class="flex gap-4 mt-3 flex-wrap">
+        <SocialPill>
+          <JavaScript class="size-4 md:size-6" /><span class="md:text-2md"
+            >JavaScript</span
+          >
+        </SocialPill>
+
+        <SocialPill>
+          <AngularIcon class="size-4 md:size-6" />Angular
+        </SocialPill>
+        <SocialPill>
+          <NodeIcon class="size-4 md:size-6" />NodeJs
+        </SocialPill>
+        <SocialPill>
+          <MongoIcon class="size-4 md:size-6" />MongoDb
+        </SocialPill>
+        <SocialPill>
+          <TailwindIcon class="size-4 md:size-6" />TailwindCSS
+        </SocialPill>
+        <SocialPill>
+          <AstroIcon class="size-4 md:size-6" />Astro
+        </SocialPill>
+        <SocialPill>
+          <SeleniumIcon class="size-4 md:size-6" />Selenium
+        </SocialPill>
+        <SocialPill>
+          <PostmanIcon class="size-4 md:size-6" />Postman
+        </SocialPill>
+      </div>
     </SectionContainer>
   </main>
 </Layout>
